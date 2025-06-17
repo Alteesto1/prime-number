@@ -1,0 +1,21 @@
+import java.util.Scanner;
+
+public class assegment{
+    public static void main(String[] args) {
+
+
+       Scanner input = new Scanner(System.in);
+        int sum = 0;
+        String inputs = "";
+        System.out.print("plese enter integer number \n" +
+                " tap 'n' to exit!! \n");
+        while (!input.equals("n")) {
+            System.out.printf("enter number :");
+            inputs = input.nextLine();
+            if (!input.equals("n")) {
+                int number = Integer.parseInt(inputs);
+                sum += number;
+            }
+        }
+        System.out.println("Isku darka numbers-ka waa: " + sum);
+    }}
